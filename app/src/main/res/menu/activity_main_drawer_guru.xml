@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/men_top"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/membaca">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_baca_huruf_guru"
+                    android:icon="@drawable/ic_dashboard"
+                    android:title="@string/huruf"/>
+
+                <item
+                    android:id="@+id/nav_baca_gambar_guru"
+                    android:icon="@drawable/gambar"
+                    android:title="@string/gambar"/>
+            </menu>
+
+        </item>
+        <item
+            android:title="@string/tebak">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_tebak_huruf_guru"
+                    android:icon="@drawable/ic_huruf"
+                    android:title="@string/huruf"/>
+
+                <item
+                    android:id="@+id/nav_tebak_kata_guru"
+                    android:icon="@drawable/kata"
+                    android:title="@string/kata"/>
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

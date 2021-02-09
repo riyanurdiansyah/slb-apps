@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">SkripsiDisya</string>
+    <string name="nis">NIS Siswa</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="sekolah">Sekolah Luar Biasa Negeri Bekasi Jaya</string>
+    <string name="loading">Loading...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama">Cari berdasarkan nama</string>
+    <string name="form">FORM</string>
+    <string name="username">Username</string>
+    <string name="nama_lengkap">Nama</string>
+    <string name="no_hp">No Handphone</string>
+    <string name="tgl_lahir">Tanggal Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="role">Role</string>
+    <string name="buat_akun">BUAT AKUN</string>
+    <string name="guru">GURU</string>
+    <string name="siswa">SISWA</string>
+    <string name="minimal_8_karakter">minimal 8 karakter</string>
+    <string name="masukkan_nama_lengkap">masukkan nama lengkap</string>
+    <string name="nomor_induk_siswa_guru">nomor induk siswa/guru</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="masukkan_password_baru">Masukkan password baru</string>
+
+    <array name="jk">
+        <item>Pilih</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </array>
+    <string name="title_activity_siswa">SiswaActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="logout">Keluar</string>
+    <string name="ayo_tebaaaak"><u>AYO TEBAAAAK</u></string>
+    <string name="title">Title</string>
+    <string name="todo">TODO</string>
+    <string name="penjelasan">Penjelasan</string>
+    <string name="dev">Developer</string>
+    <string name="tentang">Sekolah</string>
+    <string name="profil">Profil</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="keluar">Keluar</string>
+    <string name="konfirmasi_password">Konfirmasi password</string>
+    <string name="title_activity_guru">GuruActivity</string>
+    <string name="gambar">Gambar</string>
+    <string name="huruf">Huruf</string>
+    <string name="kata">Kata</string>
+    <string name="membaca">Membaca</string>
+    <string name="tebak">Tebak</string>
+    <string name="membaca_gambar">Membaca Gambar</string>
+    <string name="membaca_huruf">Membaca Huruf</string>
+    <string name="bisindo">Bisindo</string>
+    <string name="sibi">Sibi</string>
+    <string name="tap_untuk_ubah">Tap untuk ubah</string>
+    <string name="tebak_huruf">Tebak Huruf</string>
+    <string name="tebak_kata">Tebak Kata</string>
+    <string name="visi">Melalui layanan pendidikan khusus mewujudkan anak didik yang beriman, bertaqwa, cerdas, terampil dan mandiri.</string>
+    <string name="misi">1. Menanamkan serta meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</string>
+    <string name="misi4">4. Mempersiapkan peserta didik untuk hidup mandiri dalam kehidupan bagi diri sendiri, keluarga dan masyarakat.</string>
+    <string name="misi2">2. Melaksanakan pembelajaran dan bimbingan secara efektif agar peserta didik dapat berkembang secara optimal.</string>
+    <string name="misi3">3. Menumbuh kembangkan keterampilan anak didik secara dengan kemampuannya.</string>
+    <string name="tunarungu">Tuna rungu adalah kondisi fisik yang dialami oleh seseorang yang tidak memilki kemampuan untuk mendengarkan suara dalam bentuk apapun, biasanya seorang tuna rungu juga menderita tuna wicara atau ketidak mampuan untuk berbicara.</string>
+    <string name="tunawicara">Tunawicara adalah seseorang mengalami kelainan baik dalam pengucapan (artikulasi) bahasa maupun suaranya dari bicara normal, sehingga menimbulkan kesulitan dalam berkomunikasi lisan dalam lingkungan.</string>
+    <string name="tunagrahita">Tunagrahita adalah kondisi seseorang dengan kemampuan intelektual dan kognitif yang berada di bawah rata-rata dibandingkan anak pada umumnya. Kondisi ini dapat terjadi pada bayi setelah dilahirkan, sejak bayi berada di dalam kandungan atau selama proses persalinan.</string>
+    <string name="tunanetra">Tunanetra adalah mereka yang mempunyai kombinasi ketajaman penglihatan hampir kurang dari 0,3 (60/200) atau mereka yang mempunyai tingkat kelainan fungsi penglihatan yang lainnya lebih tinggi, yaitu mereka yang tidak mungkin atau berkesulitan secara signifikan untuk membaca tulisan atau ilustrasi awas meskipun dengan mempergunakan alat bantu kaca pembesar</string>
+</resources>

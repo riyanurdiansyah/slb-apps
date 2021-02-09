@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.riyanurdiansyah.skripsidisya.siswa.ui.HomeFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_profil"
+        android:name="com.riyanurdiansyah.skripsidisya.siswa.ui.ProfilSiswaActivity"
+        android:label="@string/profil"
+        tools:layout="@layout/activity_profil_siswa" />
+
+    <fragment
+        android:id="@+id/nav_sekolah"
+        android:name="com.riyanurdiansyah.skripsidisya.siswa.ui.TentangSekolahFragment"
+        android:label="@string/tentang"
+        tools:layout="@layout/fragment_tentang_sekolah" />
+
+    <activity
+        android:id="@+id/nav_dev"
+        android:name="com.riyanurdiansyah.skripsidisya.siswa.ui.DeveloperActivity"
+        android:label="@string/dev"
+        tools:layout="@layout/activity_developer" />
+
+</navigation>

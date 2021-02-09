@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical"
+    tools:context=".siswa.ui.ProfilSiswaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putih"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivBackProfil"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/navy_tua"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/ivEditProfil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_edit"
+            android:backgroundTint="@color/navy_tua"
+            tools:ignore="ContentDescription" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:clickable="false"
+            android:id="@+id/ivProfil"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_below="@+id/ivBackProfil"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/abu"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvNisProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBackProfil"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/ivProfil"
+            android:fontFamily="@font/averia_sans_libre_bold"
+            android:text=""
+            android:textColor="@color/hitam"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvNamaProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNisProfil"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/ivProfil"
+            android:fontFamily="@font/averia_sans_libre_bold"
+            android:text="Riyan Nurdiansyah"
+            android:textColor="@color/hitam"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_class"
+            android:backgroundTint="@color/abuPekat"
+            tools:ignore="ContentDescription" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Kelas"
+            app:hintTextColor="@color/navy_tua"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:enabled="false"
+                android:id="@+id/etKelasProfil"
+                android:text="VI C"
+                android:textColorHint="@color/navy_tua"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layHpProfil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_phone"
+            android:backgroundTint="@color/abuPekat"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="No Handphone"
+            app:hintTextColor="@color/navy_tua"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
+                android:enabled="false"
+                android:id="@+id/etHpProfil"
+                android:text="081381161992"
+                android:textColorHint="@color/navy_tua"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layEmailProfil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_gender"
+            android:backgroundTint="@color/abuPekat"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Jenis Kelamin"
+            app:hintTextColor="@color/navy_tua"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:enabled="false"
+                android:id="@+id/etJkProfil"
+                android:text="Perempuan"
+                android:textColorHint="@color/navy_tua"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_tanggal"
+            android:backgroundTint="@color/abuPekat"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Tanggal Lahir"
+            app:hintTextColor="@color/navy_tua"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:enabled="false"
+                android:id="@+id/etTanggalProfil"
+                android:text="04-03-1996"
+                android:textColorHint="@color/navy_tua"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_alamat"
+            android:backgroundTint="@color/abuPekat"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="Alamat"
+            app:hintTextColor="@color/navy_tua"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="text"
+                android:enabled="false"
+                android:id="@+id/etAlamatProfil"
+                android:text=""
+                android:textColorHint="@color/navy_tua"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

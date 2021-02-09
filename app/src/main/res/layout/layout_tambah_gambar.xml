@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/abuMuda"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="TAMBAH GAMBAR"
+                android:textColor="@color/hitam"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Kategori"
+                android:textColor="@color/abuPekat"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTbhGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Nama Gambar"
+                android:textColor="@color/abuPekat"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etTambahGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_10dp"
+                android:minHeight="40dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Foto"
+                android:textColor="@color/abuPekat"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivTambahGambar"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add" />
+
+            <Button
+                android:id="@+id/btnBatalTbhGambar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_10dp"
+                android:backgroundTint="@color/abu"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Batal"
+                android:textColor="@color/putih" />
+
+            <Button
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btnTbhGambar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Tambah Gambar"
+                android:textColor="@color/putih" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

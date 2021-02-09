@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guru.ui.DetailBacaHurufGuruActivity">
+
+    <include
+        android:id="@+id/tbDetail"
+        layout="@layout/toolbar_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/btnUbahDetail"
+        android:layout_below="@+id/tbDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/navy_tua"
+                        android:layout_marginStart="15dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/arvo_bold"
+                        android:text="@string/tap_untuk_ubah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:background="@drawable/bg_view_dash"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/etDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_btn_6dp"
+                android:backgroundTint="@color/abuMuda"
+                android:fontFamily="@font/arvo"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnUbahDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_6dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="UBAH"
+        android:textColor="@color/putih"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.activity.TambahUserActivity">
+
+    <include
+        android:id="@+id/tbForm"
+        layout="@layout/toolbar_tambah_user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbForm"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/hitam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/averia_sans_libre_bold"
+                    android:text="@string/username"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etUsernameRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arvo"
+                    android:textColorHint="@color/abuMuda"
+                    android:textColor="@color/abuPekat"
+                    android:hint="@string/nomor_induk_siswa_guru"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:textColor="@color/hitam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/averia_sans_libre_bold"
+                    android:text="@string/nama_lengkap"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etNamaRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/abuMuda"
+                    android:textColor="@color/abuPekat"
+                    android:fontFamily="@font/arvo"
+                    android:hint="@string/masukkan_nama_lengkap"
+                    android:inputType="textCapWords"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:textColor="@color/hitam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/averia_sans_libre_bold"
+                    android:text="@string/password"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etPasswordRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arvo"
+                    android:textColorHint="@color/abuMuda"
+                    android:textColor="@color/abuPekat"
+                    android:hint="@string/minimal_8_karakter"
+                    android:inputType="textPassword"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:textColor="@color/hitam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/averia_sans_libre_bold"
+                    android:text="@string/jk"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/jk"
+                    android:id="@+id/spinnerJkRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arvo"
+                    android:textColorHint="@color/abuMuda"
+                    android:textColor="@color/abuPekat"
+                    android:hint="@string/minimal_8_karakter"
+                    android:inputType="textPassword"
+                    tools:ignore="Autofill" />
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/hitam"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/averia_sans_libre_bold"
+                        android:text="@string/role"
+                        android:textSize="16sp" />
+
+                    <worker8.com.github.radiogroupplus.RadioGroupPlus
+                        android:id="@+id/rgRoleAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbSiswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:layoutDirection="rtl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/siswa"
+                            android:textColor="@color/abuPekat"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbGuru"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:layoutDirection="rtl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/guru"
+                            android:textColor="@color/abuPekat"
+                            android:textSize="16sp" />
+                    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisAdmin"
+        android:text="@string/buat_akun"
+        android:textSize="16sp"
+        android:textColor="@color/putih"
+        android:fontFamily="@font/montserrat_bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/bg_btn_6dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

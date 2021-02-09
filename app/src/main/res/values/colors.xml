@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0399FB</color>
+    <color name="colorPrimaryDark">#06547E</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="merah">#FF0404</color>
+    <color name="putih">#FFFF</color>
+    <color name="hitam">#000</color>
+    <color name="hijau">#1DFF02</color>
+    <color name="abu">#B8B8B8</color>
+    <color name="abuMuda">#EBEAE9E9</color>
+    <color name="abuPekat">#D0706E6E</color>
+    <color name="navy_tua">#022237</color>
+    <color name="pastel">#FAF0E9</color>
+    <color name="pastelDark">#F1BE9B</color>
+    <color name="navy">#055F9A</color>
+    <color name="kuning">#F8DF03</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".siswa.huruf.TebakKataActivity">
+
+    <include
+        layout="@layout/toolbar_back"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/ivSoalKata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/etJawabanKata"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="Masukkan jawaban"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/abuMuda"
+            android:background="@drawable/bg_btn_6dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btnJawabKata"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/putih"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_margin="50dp"
+            android:background="@drawable/bg_btn_6dp"
+            android:text="CEK JAWABAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

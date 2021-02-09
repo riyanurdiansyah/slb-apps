@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".siswa.daftar_guru.DaftarGuruActivity">
+
+    <ProgressBar
+        android:id="@+id/pbDaftarGuruSiswa"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        android:id="@+id/cvSearchGuruSiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:queryBackground="@color/putih"
+            android:backgroundTint="@color/putih"
+            android:queryHint="@string/nama"
+            android:id="@+id/searchGuruSiswa"
+            android:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search"
+            android:drawableStart="@drawable/ic_search"
+            android:inputType="text"
+            tools:ignore="Autofill" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDaftarGuru"
+        android:layout_below="@+id/cvSearchGuruSiswa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

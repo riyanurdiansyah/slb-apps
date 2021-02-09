@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.tab.TabGuruAdmin">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        android:id="@+id/cvSearchGuru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:queryBackground="@color/putih"
+            android:backgroundTint="@color/putih"
+            android:queryHint="@string/nama"
+            android:id="@+id/searchGuruAdmin"
+            android:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search"
+            android:drawableStart="@drawable/ic_search"
+            android:inputType="text"
+            tools:ignore="Autofill" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/pbGuruAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGuruAdmin"
+        android:layout_below="@+id/cvSearchGuru"
+        tools:listitem="@layout/layout_admin_guru"
+        tools:itemCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

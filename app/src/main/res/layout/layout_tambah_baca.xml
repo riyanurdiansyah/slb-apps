@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/abuMuda"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="TAMBAH BACA HURUF"
+                android:textColor="@color/hitam"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abu" />
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/ivTambahBaca"
+                android:src="@drawable/add"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/etPenjelasanTambahBaca"
+                android:gravity="bottom"
+                android:backgroundTint="@color/abuMuda"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn_6dp"
+                android:minHeight="100dp"
+                android:maxLines="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <worker8.com.github.radiogroupplus.RadioGroupPlus
+                android:layout_marginBottom="20dp"
+                android:id="@+id/rgTambahBaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbBisindo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:layoutDirection="rtl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/bisindo"
+                    android:textColor="@color/abuPekat"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSibi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:layoutDirection="rtl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/sibi"
+                    android:textColor="@color/abuPekat"
+                    android:textSize="16sp" />
+            </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnBatalTambahBaca"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/abu"
+                    android:background="@drawable/bg_btn_6dp"
+                    android:text="batal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btnTambahBaca"
+                    android:textColor="@color/putih"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@drawable/bg_btn_6dp"
+                    android:text="Tambah"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

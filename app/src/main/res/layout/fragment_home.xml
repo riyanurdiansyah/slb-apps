@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".siswa.ui.HomeFragment" >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMembacaSiswa"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Membaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/huruf"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Huruf Isyarat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMembacaGambarSiswa"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@color/putih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Membaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/gambar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTebakHuruf"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Tebak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tebak"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Huruf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTebakKataSiswa"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@color/putih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Tebak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/kata"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Kata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDaftarGuru"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Daftar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/guru"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Guru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDisabilitas"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@color/putih"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/putih"
+                        android:background="@color/abuPekat"
+                        android:gravity="center"
+                        android:text="Tentang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tentang"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/hitam"
+                        android:gravity="center"
+                        android:text="Disabilitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+</LinearLayout>

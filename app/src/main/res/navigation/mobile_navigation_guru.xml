@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_baca_huruf_guru">
+
+    <fragment
+        android:id="@+id/nav_baca_huruf_guru"
+        android:name="com.riyanurdiansyah.skripsidisya.guru.ui.BacaHurufGuruFragment"
+        android:label="@string/membaca_huruf"
+        tools:layout="@layout/fragment_baca_huruf_guru" />
+
+    <fragment
+        android:id="@+id/nav_baca_gambar_guru"
+        android:name="com.riyanurdiansyah.skripsidisya.guru.ui.BacaGambarGuruFragment"
+        android:label="@string/membaca_gambar"
+        tools:layout="@layout/fragment_baca_gambar_guru" />
+
+    <fragment
+        android:id="@+id/nav_tebak_huruf_guru"
+        android:name="com.riyanurdiansyah.skripsidisya.guru.ui.TebakHurufGuruFragment"
+        android:label="@string/tebak_huruf"
+        tools:layout="@layout/fragment_tebak_huruf_guru" />
+
+    <fragment
+        android:id="@+id/nav_tebak_kata_guru"
+        android:name="com.riyanurdiansyah.skripsidisya.guru.ui.TebakKataGuruFragment"
+        android:label="@string/tebak_kata"
+        tools:layout="@layout/fragment_tebak_kata_guru" />
+</navigation>

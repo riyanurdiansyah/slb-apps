@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ivBackToolbar"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/abuPekat"
+            android:background="@drawable/ic_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/tvTittle"
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

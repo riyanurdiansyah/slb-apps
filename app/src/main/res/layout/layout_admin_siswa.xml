@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLayoutSiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignTop="@+id/layoutSiswaAdmin"
+                android:id="@+id/tvKelasSiswaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/navy_tua"
+                android:fontFamily="@font/arvo_bold"
+                android:padding="4dp"
+                android:text="VI. A"
+                android:textColor="@color/putih"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutSiswaAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/ivSiswaAdmin"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamaSiswaAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arvo_bold"
+                        android:text="Dyas Syafirra Jasmine"
+                        android:textColor="@color/hitam"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvNisSiswaAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arvo"
+                        android:text="14045"
+                        android:textColor="@color/abuPekat"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvJkSiswaAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arvo"
+                        android:textColor="@color/abuPekat"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAlamatSiswaAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arvo"
+                        android:textColor="@color/abuPekat"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/btnEditSiswaAdmin"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/bg_btn_6dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Ubah"
+                            android:textColor="@color/hitam" />
+
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="2.5"
+                            android:id="@+id/btnCallSiswaAdmin"
+                            android:background="@drawable/bg_btn_6dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:drawableStart="@drawable/ic_call"
+                            android:drawableTint="@color/putih"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="2dp"
+                            android:text="Telfon"
+                            android:textColor="@color/putih" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

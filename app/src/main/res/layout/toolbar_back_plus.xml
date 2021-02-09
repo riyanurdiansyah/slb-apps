@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ivBackToolbarPlus"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/abuPekat"
+            android:background="@drawable/ic_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/tvTittlePlus"
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivPlus"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/abuPekat"
+            android:background="@drawable/ic_plus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/todo" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
